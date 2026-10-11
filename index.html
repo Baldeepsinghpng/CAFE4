@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>NOISY BEAN | Iced Coffee, Burgers and Good Vibes (Demo Concept)</title>
+  <meta name="description" content="Noisy Bean is a demo concept for a trendy cafe: signature iced coffees, mocktails, smash burgers and snacks. Build your order and send it on WhatsApp.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <div class="demo-bar">DEMO CONCEPT &middot; names, prices, reviews and contacts are placeholders</div>
+
+  <header class="site-header" id="top">
+    <a class="brand" href="#top" data-brand>NOISY BEAN</a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="nav" aria-label="Open menu">MENU</button>
+    <nav id="nav" class="nav" aria-label="Main">
+      <a href="#menu">Menu</a>
+      <a href="#drops">Drops</a>
+      <a href="#feed">Feed</a>
+      <a href="#find">Find us</a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <h1><span>SIP</span><span class="o">LOUD.</span><span>EAT</span><span class="o">LOUDER.</span></h1>
+      <figure class="hero-img">
+        <img src="https://images.unsplash.com/photo-1558857563-b371033873b8?auto=format&fit=crop&w=1000&q=80" alt="Iced coffee in a tall glass with a straw" fetchpriority="high">
+        <figcaption class="sticker">New: Salted Caramel Cold Foam</figcaption>
+      </figure>
+      <div class="hero-bottom">
+        <p>Iced coffees. Mocktails. Smash burgers. Late nights.</p>
+        <a class="btn" href="#menu">Build your order</a>
+      </div>
+    </section>
+
+    <div class="marquee" aria-hidden="true"><div class="track"><span>ICED LATTES</span><span>&#9679;</span><span>SMASH BURGERS</span><span>&#9679;</span><span>MOCKTAILS</span><span>&#9679;</span><span>LOADED FRIES</span><span>&#9679;</span><span>ICED LATTES</span><span>&#9679;</span><span>SMASH BURGERS</span><span>&#9679;</span><span>MOCKTAILS</span><span>&#9679;</span><span>LOADED FRIES</span><span>&#9679;</span></div></div>
+
+    <section class="menu" id="menu">
+      <div class="menu-head">
+        <h2>THE MENU</h2>
+        <div class="filters" role="group" aria-label="Menu categories">
+          <button class="chip on" data-f="all" aria-pressed="true">All</button>
+          <button class="chip" data-f="coffee" aria-pressed="false">Iced Coffee</button>
+          <button class="chip" data-f="mock" aria-pressed="false">Mocktails</button>
+          <button class="chip" data-f="eat" aria-pressed="false">Burgers &amp; Snacks</button>
+        </div>
+      </div>
+      <div class="grid" id="grid">
+        <article class="item" data-cat="coffee" data-name="Salted Caramel Cold Foam" data-price="260">
+          <div class="pic"><img src="https://images.unsplash.com/photo-1558857563-b371033873b8?auto=format&fit=crop&w=700&q=80" alt="Iced caramel coffee with cold foam" loading="lazy"></div>
+          <h3>Salted Caramel Cold Foam</h3><p>Cold brew, caramel, salty cloud on top.</p>
+          <div class="row"><span class="price">&#8377;260</span><button class="add" aria-label="Add Salted Caramel Cold Foam to order">+ Add</button></div>
+        </article>
+        <article class="item" data-cat="coffee" data-name="Mocha Overdose" data-price="280">
+          <div class="pic"><img src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?auto=format&fit=crop&w=700&q=80" alt="Iced chocolate coffee drink" loading="lazy"></div>
+          <h3>Mocha Overdose</h3><p>Double espresso, dark chocolate, ice.</p>
+          <div class="row"><span class="price">&#8377;280</span><button class="add" aria-label="Add Mocha Overdose to order">+ Add</button></div>
+        </article>
+        <article class="item" data-cat="mock" data-name="Mango Chilli Fizz" data-price="220">
+          <div class="pic"><img src="https://images.unsplash.com/photo-1556679343-c7306c1976bc?auto=format&fit=crop&w=700&q=80" alt="Colourful iced mocktail with fruit" loading="lazy"></div>
+          <h3>Mango Chilli Fizz</h3><p>Sweet, spicy, very photogenic.</p>
+          <div class="row"><span class="price">&#8377;220</span><button class="add" aria-label="Add Mango Chilli Fizz to order">+ Add</button></div>
+        </article>
+        <article class="item" data-cat="mock" data-name="Blue Lagoon Cooler" data-price="210">
+          <div class="pic"><img src="https://images.unsplash.com/photo-1497935586351-b67a49e012bf?auto=format&fit=crop&w=700&q=80" alt="Refreshing citrus drink with ice" loading="lazy"></div>
+          <h3>Citrus Lagoon Cooler</h3><p>Lime, mint, soda, zero chill needed.</p>
+          <div class="row"><span class="price">&#8377;210</span><button class="add" aria-label="Add Citrus Lagoon Cooler to order">+ Add</button></div>
+        </article>
+        <article class="item" data-cat="eat" data-name="Double Smash Burger" data-price="390">
+          <div class="pic"><img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=700&q=80" alt="Stacked smash burger with cheese" loading="lazy"></div>
+          <h3>Double Smash Burger</h3><p>Two patties, melty cheese, secret sauce.</p>
+          <div class="row"><span class="price">&#8377;390</span><button class="add" aria-label="Add Double Smash Burger to order">+ Add</button></div>
+        </article>
+        <article class="item" data-cat="eat" data-name="Peri Peri Loaded Fries" data-price="240">
+          <div class="pic"><img src="https://images.unsplash.com/photo-1504754524776-8f4f37790ca0?auto=format&fit=crop&w=700&q=80" alt="Plate of loaded fries" loading="lazy"></div>
+          <h3>Peri Peri Loaded Fries</h3><p>Crispy, spicy, share (or don't).</p>
+          <div class="row"><span class="price">&#8377;240</span><button class="add" aria-label="Add Peri Peri Loaded Fries to order">+ Add</button></div>
+        </article>
+      </div>
+      <p class="fine">Demo menu and prices. The order list below is a real WhatsApp message link, but no payment or ordering system is attached.</p>
+    </section>
+
+    <section class="drops" id="drops">
+      <div class="drop-text">
+        <p class="tagline">THIS WEEK'S DROP</p>
+        <h2>Biscoff Frappe<br>is back.</h2>
+        <p>Limited batch. When the syrup's gone, it's gone.</p>
+        <a class="btn btn-ink" data-wa href="https://wa.me/910000000000">Ask on WhatsApp</a>
+      </div>
+      <div class="drop-img"><img src="https://images.unsplash.com/photo-1572442388796-11668a67e53d?auto=format&fit=crop&w=1000&q=80" alt="Creamy blended coffee drink with topping" loading="lazy"></div>
+    </section>
+
+    <section class="feed" id="feed">
+      <h2>THE FEED <span class="handle">@yourcafe (demo)</span></h2>
+      <div class="insta">
+        <a class="post" href="#feed" tabindex="0"><img src="https://images.unsplash.com/photo-1541167760496-1628856ab772?auto=format&fit=crop&w=600&q=80" alt="Latte art heart" loading="lazy"><span>Latte art Mondays</span></a>
+        <a class="post" href="#feed"><img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=600&q=80" alt="Burger close-up" loading="lazy"><span>Smash o'clock</span></a>
+        <a class="post" href="#feed"><img src="https://images.unsplash.com/photo-1521017432531-fbd92d768814?auto=format&fit=crop&w=600&q=80" alt="Friends at the cafe" loading="lazy"><span>Squad goals</span></a>
+        <a class="post" href="#feed"><img src="https://images.unsplash.com/photo-1558857563-b371033873b8?auto=format&fit=crop&w=600&q=80" alt="Iced coffee in sunlight" loading="lazy"><span>Golden hour sip</span></a>
+        <a class="post" href="#feed"><img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=600&q=80" alt="Cafe interior" loading="lazy"><span>The corner booth</span></a>
+        <a class="post" href="#feed"><img src="https://images.unsplash.com/photo-1504754524776-8f4f37790ca0?auto=format&fit=crop&w=600&q=80" alt="Snack spread" loading="lazy"><span>Snack attack</span></a>
+      </div>
+      <p class="fine">Demo gallery. Posts are placeholders and are not linked to a real account.</p>
+      <div class="chatter">
+        <p class="tagline">DEMO REVIEWS</p>
+        <blockquote>"Literally my whole personality now." <cite>Sample Guest A</cite></blockquote>
+        <blockquote>"Best iced coffee on the street. Fight me." <cite>Sample Guest B</cite></blockquote>
+      </div>
+    </section>
+
+    <section class="find" id="find">
+      <h2>COME<br>THROUGH.</h2>
+      <div class="find-info">
+        <address>123 Demo Street, Your City, State 000000</address>
+        <ul class="hours">
+          <li><span>Mon &ndash; Thu</span><span>11 am &ndash; 11 pm</span></li>
+          <li><span>Fri &ndash; Sun</span><span>11 am &ndash; 1 am</span></li>
+        </ul>
+        <p class="fine">Demo hours.</p>
+        <div class="actions">
+          <a class="btn" data-maps href="https://www.google.com/maps/search/?api=1&query=Your+Cafe+Address+Here" target="_blank" rel="noopener">Directions</a>
+          <a class="btn btn-ghost" data-tel href="tel:+910000000000">Call us</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <span data-brand>NOISY BEAN</span>
+    <span>Demo concept. Not a real business.</span>
+    <a href="#top">Top &uarr;</a>
+  </footer>
+
+  <aside class="order" id="order" aria-label="Your order list" hidden>
+    <button class="order-head" id="orderToggle" aria-expanded="false" aria-controls="orderBody">
+      <span>Your order <b id="count">0</b></span><span id="total">&#8377;0</span>
+    </button>
+    <div class="order-body" id="orderBody" hidden>
+      <ul id="orderList"></ul>
+      <p class="fine">Opens WhatsApp with this list typed out. The cafe still has to confirm it.</p>
+      <div class="order-actions">
+        <button class="btn btn-ghost" id="clear" type="button">Clear</button>
+        <a class="btn" id="send" data-wa-order href="https://wa.me/910000000000" target="_blank" rel="noopener">Send on WhatsApp</a>
+      </div>
+    </div>
+  </aside>
+  <script src="script.js"></script>
+</body>
+</html>
